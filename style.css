@@ -1,0 +1,23 @@
+*{
+padding:0;
+margin:0;
+font-family:"arial,timesnewroman";
+}
+body{
+background:lightyellow;
+}
+.circle {
+width:100px;
+height:100px;
+background:white;
+border:1px solid black;
+border-radius:100%;
+}
+.number span{
+ border-radius:100%;
+
+
+
+
+
+
