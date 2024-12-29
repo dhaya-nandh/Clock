@@ -7,17 +7,107 @@ body{
 background:lightyellow;
 }
 .circle {
-width:100px;
-height:100px;
+width:400px;
+height:400px;
 background:white;
-border:1px solid black;
+border:10px solid rgb(243, 7, 7);
 border-radius:100%;
+position: relative;
+top:10%;
+left:30%;
 }
 .number span{
- border-radius:100%;
-
-
-
+ display: flex;
+ font-size: 30px;
+ font-weight: bold;
+ font-family: 'Courier New', Courier, monospace;
+}
+#one{
+position: relative;
+left:70%;
+top:25px;
+}
+#two{
+    position: relative;
+    left:89%;
+    top:60px;
+}
+#three{
+    position: absolute;
+    left:95%;
+    top:47%;
+    
+}
+#four{
+    position: absolute;
+    left:88%;
+    top:70%;
+}
+#five{
+    position: absolute;
+    left:72%;
+    top:86%;
+}
+#six{
+    position: absolute;
+    top:93%;
+    left:50%;
+}
+#seven{
+    position: absolute;
+    top:86%;
+    left:25%;
+}
+#eight{
+    position: absolute;
+    top:70%;
+    left:7%;
+}
+#nine{
+    position: absolute;
+    top:48%;
+}
+#ten{
+    position: absolute;
+    left:25px;
+    top:25%;
+}
+#eleven{
+    position: absolute;
+    left:90px;
+    top:30px;
+}
+#twleve{
+    position: absolute;
+    bottom: 90%;
+    left:45%;
+}
+.point{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:50%;
+    bottom:50%;
+    left:50%;
+}
+.slower{
+    position:fixed;
+    top:42.8%;
+    left:45.5%;
+    animation: anim 60s linear infinite;
+}
+.big{
+    width:3px;
+    height:150px;
+    background-color: blue;
+    position: absolute;
+    left:51%; 
+}
 
 
 

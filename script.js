@@ -1,3 +1,2 @@
-setInterval(()=>{
-  var time=math.floor()
-},1000)
+var big=document.querySelector(".big");
+var small=document.querySelector(".small")
