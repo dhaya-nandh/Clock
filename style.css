@@ -1,113 +1,168 @@
-*{
-padding:0;
-margin:0;
-font-family:"arial,timesnewroman";
-}
-body{
-background:lightyellow;
-}
-.circle {
-width:400px;
-height:400px;
-background:white;
-border:10px solid rgb(243, 7, 7);
-border-radius:100%;
-position: relative;
-top:10%;
-left:30%;
-}
-.number span{
- display: flex;
- font-size: 30px;
- font-weight: bold;
- font-family: 'Courier New', Courier, monospace;
-}
-#one{
-position: relative;
-left:70%;
-top:25px;
-}
-#two{
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Arial, Times New Roman";
+  }
+  
+  body {
+    background: lightyellow;
+  }
+  
+  .circle {
+    width: 400px;
+    height: 400px;
+    background: white;
+    border: 10px solid rgb(243, 7, 192);
+    border-radius: 50%;
     position: relative;
-    left:89%;
-    top:60px;
-}
-#three{
+    margin: 50px auto;
+  }
+  
+  .number span {
     position: absolute;
-    left:95%;
-    top:47%;
-    
-}
-#four{
-    position: absolute;
-    left:88%;
-    top:70%;
-}
-#five{
-    position: absolute;
-    left:72%;
-    top:86%;
-}
-#six{
-    position: absolute;
-    top:93%;
-    left:50%;
-}
-#seven{
-    position: absolute;
-    top:86%;
-    left:25%;
-}
-#eight{
-    position: absolute;
-    top:70%;
-    left:7%;
-}
-#nine{
-    position: absolute;
-    top:48%;
-}
-#ten{
-    position: absolute;
-    left:25px;
-    top:25%;
-}
-#eleven{
-    position: absolute;
-    left:90px;
-    top:30px;
-}
-#twleve{
-    position: absolute;
-    bottom: 90%;
-    left:45%;
-}
-.point{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    transform: translate(-50%, -50%);
+  }
+  
+  #one {
+    top: 10%;
+    left: 70%;
+  }
+  
+  #two {
+    top: 27%;
+    left: 88%;
+  }
+  
+  #three {
+    top: 50%;
+    left: 96%;
+  }
+  
+  #four {
+    top: 75%;
+    left: 89%;
+  }
+  
+  #five {
+    top: 90%;
+    left: 75%;
+  }
+  
+  #six {
+    top: 97%;
+    left: 52%;
+  }
+  
+  #seven {
+    top: 92%;
+    left: 28%;
+  }
+  
+  #eight {
+    top: 76%;
+    left: 10%;
+  }
+  
+  #nine {
+    top: 52%;
+    left: 3%;
+  }
+  
+  #ten {
+    top: 30%;
+    left: 10%;
+  }
+  
+  #eleven {
+    top: 12%;
+    left: 25%;
+  }
+  
+  #twelve {
+    top: 5%;
+    left: 48%;
+  }
+  
+  .point {
     width: 10px;
     height: 10px;
     background-color: black;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 50%;
     position: absolute;
-    top:50%;
-    bottom:50%;
-    left:50%;
-}
-.slower{
-    position:fixed;
-    top:42.8%;
-    left:45.5%;
-    animation: anim 60s linear infinite;
-}
-.big{
-    width:3px;
-    height:150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .slower {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+  }
+  
+  .big {
+    width: 3px;
+    height: 100px;
     background-color: blue;
     position: absolute;
-    left:51%; 
-}
-
-
-
+    top: 25%;
+    left: 50%;
+    transform-origin: bottom;
+    animation: rotate-minute 3600s linear infinite; /* 1 hour for one full rotation */
+  
+  }
+  
+  .small {
+    width: 3px;
+    height: 70px;
+    background-color: red;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform-origin: bottom;
+    animation: rotate-hour 43200s linear infinite; /* 12 hours for one full rotation */
+  }
+  
+  .seconds {
+    width: 2px;
+    height: 120px;
+    background-color: green;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform-origin: bottom;
+    animation: rotate-seconds 60s linear infinite; /* 60 seconds for one full rotation */
+  }
+  
+  /* Keyframes for rotating the clock hands */
+  @keyframes rotate-hour {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate-minute {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate-seconds {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
