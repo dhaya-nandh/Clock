@@ -11,7 +11,7 @@
   .circle {
     width: 400px;
     height: 400px;
-    background: white;
+    background: #fff;
     border: 10px solid rgb(243, 7, 192);
     border-radius: 50%;
     position: relative;
